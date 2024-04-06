@@ -4,6 +4,7 @@ import { useState } from "react";
 import Log from "./components/Log";
 import GameOver from "./components/GameOver";
 import { WINNING_COMBINATIONS } from "./winning-combinations";
+import { Link } from 'react-router-dom';
 
 // const WINNING_COMBINATIONS= [
 //   //rows
@@ -164,6 +165,7 @@ function App() {
   }
 
 
+
   return (
     <main>
       <div id="game-container">
@@ -203,6 +205,8 @@ function App() {
         board={gameBoard}
         />
       </div>
+     
+      
 
       <Log turns={gameTurns}/>
     </main>
